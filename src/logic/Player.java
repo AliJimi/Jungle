@@ -1,5 +1,7 @@
 package logic;
 
+import logic.eatable.Substance;
+
 import java.util.ArrayList;
 
 public class Player {
@@ -10,4 +12,6 @@ public class Player {
     private String lastName;
 
     private ArrayList<Animal> animals;
+
+    private ArrayList<Substance> substances;
 }

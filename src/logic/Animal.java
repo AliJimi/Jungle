@@ -1,34 +1,40 @@
 package logic;
 
+import logic.attack.AttackMechanism;
+import logic.defence.DefenceMechanism;
+import logic.eatable.Substance;
+
+import java.util.ArrayList;
+
 public class Animal {
     private String id;
 
     private String name;
 
-    private Integer maxAttackPoint;
-    private Integer attackPoint;
-    private Integer maxDefencePoint;
-    private Integer defencePoint;
+    private ArrayList<AttackMechanism> attackMechanisms;
+    private ArrayList<DefenceMechanism> defenceMechanisms;
+    private Health health;
+    private Movement walk;
+    private Movement run;
 
-    private Integer maxSpeed;
-    private Integer speed;
 
-    private Integer maxHealth;
-    private Integer health;
-
-    public void attack() {
+    public void attack(ArrayList<Animal> animals) {
 
     }
 
-    public void defence() {
+    public void defence(ArrayList<Animal> animals) {
 
     }
 
-    public void eat() {
+    public void eat(ArrayList<Substance> substances) {
 
     }
 
     public void run() {
+
+    }
+
+    public void walk() {
 
     }
 }
