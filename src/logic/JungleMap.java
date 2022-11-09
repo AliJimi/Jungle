@@ -1,10 +1,9 @@
 package logic;
 
+import logic.animal.Animal;
 import logic.eatable.Substance;
 
-import javax.sound.midi.Track;
 import java.util.ArrayList;
-import java.util.HashMap;
 
 public class JungleMap {
     ArrayList<Player> players;
@@ -20,13 +19,11 @@ public class JungleMap {
         this.animals = new ArrayList<>();
     }
 
-    public boolean addPlayer(Player player) {
+    public void addPlayer(Player player) {
         this.players.add(player);
-        return true;
     }
 
-    public boolean addBot(Player bot) {
+    public void addBot(Player bot) {
         this.bots.add(bot);
-        return true;
     }
 }

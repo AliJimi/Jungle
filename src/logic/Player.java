@@ -1,5 +1,6 @@
 package logic;
 
+import logic.animal.Animal;
 import logic.eatable.Substance;
 
 import java.util.ArrayList;
