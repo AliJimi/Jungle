@@ -20,10 +20,24 @@ public class JungleMap {
     }
 
     public void addPlayer(Player player) {
+        String id = String.valueOf(this.players.size());
+        player.setId(id);
         this.players.add(player);
+    }
+
+    public Player getPlayer(String id) {
+        return this.getPlayer(Integer.parseInt(id));
+    }
+
+    public Player getPlayer(int id) {
+        return this.players.get(id);
     }
 
     public void addBot(Player bot) {
         this.bots.add(bot);
+    }
+
+    public ArrayList<Player> getPlayers() {
+        return this.players;
     }
 }

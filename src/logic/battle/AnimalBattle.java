@@ -10,5 +10,5 @@ public abstract class AnimalBattle {
     public AnimalBattle() {
         this.animals = new ArrayList<>();
     }
-    abstract void start();
+    public abstract void start();
 }

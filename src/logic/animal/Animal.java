@@ -21,4 +21,8 @@ public abstract class Animal {
 
 
     public abstract void eat(ArrayList<Substance> substances);
+
+    public AttackMechanism getAttackMechanism() {
+        return attackMechanisms.get(0);
+    }
 }

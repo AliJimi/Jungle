@@ -10,9 +10,7 @@ public class OneToOneAnimalBattle extends AnimalBattle {
     }
 
     @Override
-    void start() {
+    public void start() {
         Animal animal1 = this.animals.get(0), animal2 = this.animals.get(1);
-
-
     }
 }
